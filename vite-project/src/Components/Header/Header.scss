@@ -1,6 +1,9 @@
+@use "/src/Styles/Partials/variables.scss" as *;
+@use "/src/Styles/Partials/mixins.scss" as *;
+
 .header {
     display: flex;
-    flex-direction: column; /* Allow content to stack vertically */
+    flex-direction: column;
     align-items: center;
     padding: 2rem 0 0 0;
     background-image: url("../../assets/images/heroimage.png");
@@ -16,12 +19,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: column;
+
+      @include tablet {
+flex-direction: row;
+            }
     }
   
     &__logo {
       img {
-        width: 15vw;
+        width: 13rem;
         padding: 0 1rem;
+
+        @include tablet {
+          width: 15vw;
+        }
       }
     }
   
@@ -67,12 +79,16 @@
     }
   
     &__about {
-        display: flex;
+        display: none;
         align-items: center; /* Align items horizontally */
         flex-direction: row; /* Image and text aligned in a row */
         padding: 0.5rem 3rem 0 3rem;
         color: white;
         background-color: rgba(8, 8, 8, 0.5);
+
+        @include tablet {
+          display: flex;
+        }
       
         img {
           width: 25vw;

@@ -27,6 +27,22 @@ const About = () => {
   return (
     <div className="about-page">
       <Header /> {/* Integrate the Header here */}
+      <p className="about-page__mobile">
+        {" "}
+        Hi, I'm Tami! <br></br>
+        As a Designer and Developer with a background in animation, a diploma in
+        software engineering, and a Master's degree in Computer Animation, I
+        bring a unique combination of technical expertise and creative
+        problem-solving to my work.<br></br> After a successful career in the
+        animation industry, where I honed my attention to detail and artistic
+        vision, I decided to grow my knowledge by diving into software
+        development. What drew me to this field is the way it blends logic and
+        creativity, allowing me to solve complex problems while building
+        innovative and impactful digital solutions. I find joy in creating
+        visually appealing user interfaces that prioritize usability. My goal is
+        to create impactful digital experiences that merge design and
+        technology.{" "}
+      </p>
       <h1 className="about-page__title">My Skills</h1>
       <ul className="about-page__skills-list">
         {skills.map((skill, index) => (

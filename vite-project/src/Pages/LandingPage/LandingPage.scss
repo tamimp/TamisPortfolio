@@ -1,3 +1,6 @@
+@use "/src/Styles/Partials/variables.scss" as *;
+@use "/src/Styles/Partials/mixins.scss" as *;
+
 .landing-page {
   display: flex;
   flex-direction: column;
@@ -7,6 +10,11 @@
   width: 100vw;
   text-align: center;
   background-color: #141414;
+  padding-bottom: 2rem;
+
+  @include tablet {
+    padding-bottom: 0rem;
+        }
 
   h3{
     color: grey;
@@ -24,8 +32,13 @@
   &__images-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 20px;
     margin-bottom: 30px;
+
+    @include tablet {
+flex-direction: row;
+    }
   }
 
   &__link {
