@@ -1,55 +1,73 @@
 .software-engineer-page {
-    padding: 0 2rem;
-    &__title {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2.5rem;
+  padding: 0;
+  width: 100vw;
+  background-color: #141414;
+  color: white;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+
+  &__project {
+    margin-bottom: 60px;
+    padding: 2rem 0;
+    border-bottom: 2px solid lightgrey;
+
+    &-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &-image {
+        width: 30vw;
+        max-height: fit-content;
+        border-radius: 3px;
+      }
     }
-  
-    &__project {
-      margin-bottom: 60px;
-  
-      &-main {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
-  
-        &-image {
-          width: 20rem;
-          max-height: fit-content;
-          border-radius: 8px;
-        }
+
+    &-info {
+      flex-grow: 1;
+      margin-left: 20px;
+
+      &-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
       }
-  
-      &-info {
-        flex-grow: 1;
-        margin-left: 20px;
-  
-        &-title {
-          font-size: 1.8rem;
-          margin-bottom: 10px;
-        }
-  
-        &-description {
-          font-size: 1.2rem;
-        }
+
+      &-description {
+        font-size: 1.2rem;
       }
-  
-      &-gallery {
-        display: flex;
-        gap: 10px;
-        &-image {
-          width: 15vw;
-          max-height: fit-content;
-          border-radius: 4px;
-          transition: transform 0.3s ease;
-    
-          &:hover {
-            transform: scale(3);
-          }
+    }
+
+    &-gallery {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      &-image {
+        width: 23vw;
+        max-height: fit-content;
+        border-radius: 2px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.7);
         }
       }
     }
   }
-  
+
+  &__project-link {
+    color: rgb(190, 55, 55); 
+    font-weight: bold; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darkred; // Darken the red on hover
+    }
+  }
+}

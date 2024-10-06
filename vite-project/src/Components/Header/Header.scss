@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    flex-direction: column; /* Allow content to stack vertically */
+    align-items: center;
+    padding: 2rem 0 0 0;
+    background-image: url("../../assets/images/heroimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid lightgrey;
+
+  
+    nav {
+      width: 95vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__logo {
+      img {
+        width: 15vw;
+        padding: 0 1rem;
+      }
+    }
+  
+    &__nav {
+      &-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      &-item {
+        margin-right: 20px;
+        font-size: 16px;
+        cursor: pointer;
+  
+        a {
+          color: white;
+          text-decoration: none;
+  
+          &:visited {
+            color: white;
+          }
+  
+          &:hover {
+            color: lightgrey;
+          }
+  
+          &:active,
+          &:focus {
+            color: lightgrey;
+          }
+        }
+      }
+    }
+  
+    &__profile {
+      &-image {
+        height: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  
+    &__about {
+        display: flex;
+        align-items: center; /* Align items horizontally */
+        flex-direction: row; /* Image and text aligned in a row */
+        padding: 0.5rem 3rem 0 3rem;
+        color: white;
+        background-color: rgba(8, 8, 8, 0.5);
+      
+        img {
+          width: 25vw;
+          border-radius: 50%; /* Circular profile image */
+          margin: 0.5rem; /* Space between the image and text */
+        }
+      
+        p {
+          font-size: 1.2rem;
+          text-align: left; /* Align the text to the left */
+          text-shadow: 2px 2px 10px rgba(128, 128, 128, 0.8); 
+        }
+      }
+    }      
+  

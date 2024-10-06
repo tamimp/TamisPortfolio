@@ -33,19 +33,14 @@ const LandingPage = () => {
           </h3>
         </a>
 
-        {/* Placeholder for another page */}
-        <a
-          href="https://www.example3.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="landing-page__link"
-        >
+        {/* Link to the About page */}
+        <Link to="/about" className="landing-page__link">
           <img src={pic3} alt="Site 3" className="landing-page__image" />
           <h3>
             Learn more
             <br /> about me
           </h3>
-        </a>
+        </Link>
       </div>
       <a
         href="mailto:tamipoliwoda@me.com"

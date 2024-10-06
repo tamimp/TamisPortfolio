@@ -1,0 +1,19 @@
+.footer {
+    background-image: url("../../assets/images/heroimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+  
+.footer__text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: .5rem;
+    font-size: 14px;
+}
